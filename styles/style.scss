@@ -53,10 +53,135 @@ ul{
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     background-position: top;
     position: relative;
-    h1{
+    .logo{
+        position: relative;
+        top: 1.5rem;
+        left: 0.5rem;
+        .header__logo{
+            height: 3.5rem;
+        }
+    }
+    .header-text{
+        position: absolute;
+        top: 20%;
+        left: 25%;
         text-align: center;
+    }
+    .h1-head{
+        text-align: center;
+        color: white;
+        margin-bottom: 3rem;
+        margin-top: 5rem;
         span{
             margin: auto;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            line-height: 10vh;
         }
+    }
+    .heading-main{
+        display: block;
+        font-size: 3.5rem;
+        
+    }
+    .heading-sub{
+        word-spacing: 10px;
+        font-weight: 100;
+    }
+    .our-tour{
+        text-decoration: none;
+        background-color: white;
+        border: none;
+        border-radius: 5rem;
+        padding: 1rem 4rem;
+        
+
+    }
+}
+
+.section-about{
+    text-align: center;
+    margin-bottom: 15rem;
+    h2{
+        font-size: 2.5rem;
+    }
+
+    .row{
+        display: flex;
+        justify-items: center;
+    }
+
+    .prographs{
+        width: 40rem;
+        margin: 3rem;
+        text-align: left;
+    }
+    .images{
+        position: relative;
+        justify-content: center;
+        img{
+            position: absolute;
+            margin: auto;
+            box-sizing: border-box;
+            box-shadow: #000000;
+            transition: transform .2s
+        }
+        img:hover{
+            z-index: 5;
+            transform: scale(1.3);
+        }
+        .img1{
+            z-index: 1;
+            top: 50px;
+            left: 50px;
+        }
+        .img2{
+            z-index: 2;
+            top: 100px;
+            left: 250px;
+        }
+        .img3{
+            z-index: 3; 
+            top: 200px;
+            left: 130px;
+        }
+    }
+}
+
+.section-featuer{
+    background-image: linear-gradient(to right bottom,
+     rgba(126,213,111,0.8),
+      rgba(40,180,133,0.8)),
+     url(../img/hero-small.jpg);
+    background-size: cover;
+    padding: 20rem 0;
+    transform: skewY(-7deg);
+    .row{
+        display: flex;
+        justify-items: center;
+        max-width: 114rem;
+        height: 30rem;
+        margin: 0 auto;
+        transform:skewY(7deg);
+    }
+    
+    .col-1{
+        background-color: white;
+        opacity: 0.7;
+        margin: 2rem;
+        padding: 2rem;
+        margin-right: 2rem;
+        width: calc((100% - 3 * 6rem) / 4);
+        text-align: center;
+    }
+    .col-1:hover{
+        z-index: 5;
+        transform: scale(1.1);
+    }
+    .box-1{
+       font-size: 1.5rem;
+    
+    text-align: center; 
+        
     }
 }
